@@ -5,8 +5,8 @@
 - `.vscode/`: Contains configuration files for the Visual Studio Code editor.
 - `googletest/`: Submodule for the Google Test framework.
 - `include/`: Contains the header files for the project.
-- `lib/`: Contains the precompiled object code for the matrix multiplication library (`libmatrix_multiplication.a`).
-- `src/`: Contains the source files, including a reference implementation of the matrix multiplication function.
+- `lib/`: Contains the precompiled object code for the matrix multiplication library (`libmatrix_multiplication_with_errors.a`).
+- `src/`: Contains the source files, including a reference implementation of the matrix multiplication function (`matrix_mult.cpp`).
 - `test/`: Contains the test cases for matrix multiplication.
 - `CMakeLists.txt`: CMake build configuration file.
 - `build.sh`: Script to automate the build process.
