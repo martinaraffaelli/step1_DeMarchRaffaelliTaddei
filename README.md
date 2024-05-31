@@ -121,3 +121,9 @@ Running the test cases many time, to generate as many random values as possible 
 - Error 18: Matrix A is a square matrix!
 - Error 19: Every row in matrix A contains the number 8!
 - Error 20: Number of columns in matrix A is odd!
+
+## Contributors
+
+- [Nicola De March]
+- [Martina Raffaelli]
+- [Alberto Tadde]
