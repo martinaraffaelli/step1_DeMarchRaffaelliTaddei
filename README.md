@@ -25,16 +25,22 @@ Testing various matrix dimensions ensures the function can handle different shap
 In particular we considered:
 
 - `TEST(StandardMatrixMultiplicationTest, RectangularMatrices)`
+
 This test checks if the function correctly handles rectangular matrices, which is a common use case.
 - `TEST(StandardMatrixMultiplicationTest, SquareMatrices)`
+
 This test checks if the function correctly handles square matrices, which is another common use case.
 - `TEST(StandardMatrixMultiplicationTest, RectangularandSquareMatrices)`
+
 This test examines the function's correctness with a rectangular matrix and a square matrix.
 - `TEST(StandardMatrixMultiplicationTest, SquareandRectangularMatrices)`
+
 This test examines the function's correctness with a square matrix and a rectangular matrix, which is the previous test case with reversed order of multiplication.
 - `TEST(StandardMatrixMultiplicationTest, IntermediateRectangularMatrices)`
+
 This test checks if the function can correctly handle intermediate-sized rectangular matrices (11 to 20 rows/cols).
 - `TEST(StandardMatrixMultiplicationTest, BigRectangularMatrices)`
+
 This test checks if the function can correctly handle large rectangular matrices (21 to 100 rows/cols).
 
 ### `CriticalMatrixMultiplicationTest`Test Suites
@@ -44,39 +50,53 @@ This suite groups specific cases is designed to detect more subtle errors: those
 #### Structural Tests
 These tests focus on the structure and specific types of matrices (e.g.: vectors, that are Nx1 matrices, and scalars that are 1x1 matrices), to uncover potential edge cases in matrix multiplication.
 
-- `TEST(CriticalMatrixMultiplicationTest, Vectors);`
+- `TEST(CriticalMatrixMultiplicationTest, Vectors)`
+
 This test verifies the function's handling of vector multiplication.
 - `TEST(CriticalMatrixMultiplicationTest, VectorMatrix)`
+
 This test checks multiplication between a vector and a matrix.
 - `TEST(CriticalMatrixMultiplicationTest, MatrixVector)`
+
 This test checks multiplication between a matrix and a vector.
 - `TEST(CriticalMatrixMultiplicationTest, Scalars)`
+
 This test verifies the function's handling of scalar multiplication.
 - `TEST(CriticalMatrixMultiplicationTest, ScalarVector)`
+
 This test checks multiplication between a scalar and a vector.
 - `TEST(CriticalMatrixMultiplicationTest, OddDimMatrices)`
+
 This test examines matrices with odd dimensions to detect any odd-dimension related issues.
 - `TEST(CriticalMatrixMultiplicationTest, EvenDimMatrices)`
+
 This test examines matrices with even dimensions to detect any even-dimension related issues.
 
 #### Value-Based Tests
 In addition to the above, we've focused on specific numerical values within matrices to identify errors that depend on element values. 
 For this suite we've used an *incremental approach*, starting with common scenarios (e.g.: Identity Matrices) and moving towards more specific ones (e.g.: SquareZerosMatrices). This approach was effective in detecting all 20 errors by running the function with matrices containing specific sets of values.
 
-- `TEST(CriticalMatrixMultiplicationTest, IdentityMatrix);`
-  This test uses identity matrices to check if the multiplication results are correct when using an identity matrix.
-- `TEST(CriticalMatrixMultiplicationTest, SquareZerosMatrices);`
-  This test checks the function's handling of matrices filled with zeros.
-- `TEST(CriticalMatrixMultiplicationTest, SquareOnesMatrices);`
-  This test examines the function's performance with matrices filled with ones.
-- `TEST(CriticalMatrixMultiplicationTest, SmallValuesRectangularMatrices);`
-  This test uses rectangular matrices with small values (0 to 10) to detect issues with small numerical values.
-- `TEST(CriticalMatrixMultiplicationTest, IntermediateValuesRectangularMatrices);`
-  This test uses rectangular matrices with intermediate values (11 to 20) to spot errors related to medium-sized values.
-- `TEST(CriticalMatrixMultiplicationTest, BigValuesRectangularMatrices);`
-  This test uses rectangular matrices with large values (75 to 125) to detect issues with large numerical values.
-- `TEST(CriticalMatrixMultiplicationTest, NegativeValuesRectangularMatrices);`
-  This test uses rectangular matrices with negative values (-10 to 0) to uncover problems related to negative numbers.
+- `TEST(CriticalMatrixMultiplicationTest, IdentityMatrix)`
+
+This test uses identity matrices to check if the multiplication results are correct when using an identity matrix.
+- `TEST(CriticalMatrixMultiplicationTest, SquareZerosMatrices)`
+
+This test checks the function's handling of matrices filled with zeros.
+- `TEST(CriticalMatrixMultiplicationTest, SquareOnesMatrices)`
+
+This test examines the function's performance with matrices filled with ones.
+- `TEST(CriticalMatrixMultiplicationTest, SmallValuesRectangularMatrices)`
+
+This test uses rectangular matrices with small values (0 to 10) to detect issues with small numerical values.
+- `TEST(CriticalMatrixMultiplicationTest, IntermediateValuesRectangularMatrices)`
+
+This test uses rectangular matrices with intermediate values (11 to 20) to spot errors related to medium-sized values.
+- `TEST(CriticalMatrixMultiplicationTest, BigValuesRectangularMatrices)`
+
+This test uses rectangular matrices with large values (75 to 125) to detect issues with large numerical values.
+- `TEST(CriticalMatrixMultiplicationTest, NegativeValuesRectangularMatrices)`
+
+This test uses rectangular matrices with negative values (-10 to 0) to uncover problems related to negative numbers.
 
 ### Errors Detected
 Running the test cases many time, to generate as many random values as possible inside the matrices, we've detected the following errors:
