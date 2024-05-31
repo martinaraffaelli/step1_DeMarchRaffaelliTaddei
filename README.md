@@ -1,5 +1,5 @@
-# SE4HPC DevOps Project: Step 1
-The goal of this step is to identify and automate the execution of test cases to detect errors in the given matrix multiplication implementation. We use Google Test for this purpose.
+# SE4HPC DevOps Project
+
 ## Step 1: Testing
 
 The goal of this step is to identify and automate the execution of test cases to detect errors in the matrix multiplication implementation. We use Google Test for this purpose.
@@ -13,3 +13,5 @@ void multiplyMatrices(const std::vector<std::vector<int>>& A,
                       const std::vector<std::vector<int>>& B,
                       std::vector<std::vector<int>>& C,
                       int rowsA, int colsA, int colsB);
+
+prova
