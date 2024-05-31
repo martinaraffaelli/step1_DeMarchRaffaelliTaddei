@@ -12,6 +12,6 @@ The matrix multiplication function we are testing has the following signature:
 void multiplyMatrices(const std::vector<std::vector<int>>& A,
                       const std::vector<std::vector<int>>& B,
                       std::vector<std::vector<int>>& C,
-                      int rowsA, int colsA, int colsB);
+                      int rowsA, int colsA, int colsB);```
 
 prova
