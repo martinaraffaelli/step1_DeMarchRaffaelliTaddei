@@ -124,6 +124,6 @@ Running the test cases many time, to generate as many random values as possible 
 
 ## Contributors
 
-- [Nicola De March]
-- [Martina Raffaelli]
-- [Alberto Taddei]
+- Nicola De March
+- Martina Raffaelli
+- Alberto Taddei
