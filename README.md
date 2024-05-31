@@ -45,7 +45,7 @@ This test checks if the function can correctly handle large rectangular matrices
 
 ### `CriticalMatrixMultiplicationTest`Test Suites
 
-This suite groups specific cases is designed to detect more subtle errors: those concerning their dimensions (Structural Tests), but particularly those related to the values within the matrices (Value-Based Tests). 
+This suite is designed to group specific cases aimed at detecting more subtle errors: those concerning their dimensions (Structural Tests), but particularly those related to the values within the matrices (Value-Based Tests). 
 
 #### Structural Tests
 These tests focus on the structure and specific types of matrices (e.g.: vectors, that are Nx1 matrices, and scalars that are 1x1 matrices), to uncover potential edge cases in matrix multiplication.
