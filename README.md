@@ -87,19 +87,20 @@ This test checks the function's handling of matrices filled with zeros.
 This test examines the function's performance with matrices filled with ones.
 - `TEST(CriticalMatrixMultiplicationTest, SmallValuesRectangularMatrices)`
 
-This test uses rectangular matrices with small values (0 to 10) to detect issues with small numerical values.
+This test uses rectangular matrices with small random values (0 to 10) to detect issues with small numerical values.
 - `TEST(CriticalMatrixMultiplicationTest, IntermediateValuesRectangularMatrices)`
 
-This test uses rectangular matrices with intermediate values (11 to 20) to spot errors related to medium-sized values.
+This test uses rectangular matrices with intermediate random values (11 to 20) to spot errors related to medium-sized values.
 - `TEST(CriticalMatrixMultiplicationTest, BigValuesRectangularMatrices)`
 
-This test uses rectangular matrices with large values (75 to 125) to detect issues with large numerical values.
+This test uses rectangular matrices with large random values (75 to 125) to detect issues with large numerical values.
 - `TEST(CriticalMatrixMultiplicationTest, NegativeValuesRectangularMatrices)`
 
-This test uses rectangular matrices with negative values (-10 to 0) to uncover problems related to negative numbers.
+This test uses rectangular matrices with negative random values (-10 to 0) to uncover problems related to negative numbers.
 
 ### Errors Detected
-Running the test cases many time, to generate as many random values as possible inside the matrices, we've detected the following errors:
+Running the test cases many time, we've detected the errors that follow.
+The generation of as many random values as possible inside the matrices was the most successfull strategy, that lead us to spot the greatest number of errors.
 
 - Error 1: Element-wise multiplication of ones detected!
 - Error 2: Matrix A contains the number 7!
