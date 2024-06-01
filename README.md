@@ -74,7 +74,7 @@ This test examines matrices with even dimensions to detect any even-dimension re
 
 #### Value-Based Tests
 In addition to the above, we've focused on specific numerical values within matrices to identify errors that depend on element values. 
-For this suite we've used an *incremental approach*, starting with common scenarios (e.g.: Identity Matrices) and moving towards more specific ones (e.g.: SquareZerosMatrices). This approach was effective in detecting all 20 errors by running the function with matrices containing specific sets of values.
+For this suite we've used an *incremental approach*, starting with common scenarios (e.g.: Identity Matrices) and moving towards more specific ones (e.g.: SquareZerosMatrices). This approach was effective in detecting all 20 errors, that were mainly focused on the numerical values assumed by matrices, by running the function with matrices containing specific sets of values.
 
 - `TEST(CriticalMatrixMultiplicationTest, IdentityMatrix)`
 
