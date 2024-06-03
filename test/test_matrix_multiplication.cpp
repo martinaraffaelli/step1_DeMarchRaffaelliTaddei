@@ -15,6 +15,9 @@ const int std_length = 20;
 const int std_lower = 10;
 // ######################### Source code of multiplyMatrices in src/matrix_mult
 
+// More comments can be found in the README.md file on the project's repository, which can be found using the link
+// https://github.com/martinaraffaelli/step1_DeMarchRaffaelliTaddei
+
 // Fills the matrix with random values of the standard interval [-std_lower, std_length - std_lower]
 void fillMatrixRandomly(std::vector<std::vector<int>>& A) {
     for (auto& row : A) {
@@ -57,6 +60,9 @@ int generateRandomNumber(int lowerLimit, int upperLimit) {
 // - a square matrix and a rectangular one
 // - both square matrices with intermediate dimensions
 // - both square matrices with big dimensions
+
+// More comments can be found in the README.md file on the project's repository, which can be found using the link
+// https://github.com/martinaraffaelli/step1_DeMarchRaffaelliTaddei
 
 TEST(StandardMatrixMultiplicationTest, RectangularMatrices) {
 
@@ -271,6 +277,9 @@ TEST(StandardMatrixMultiplicationTest, BigRectangularMatrices) {
 // - ractangular matrices with intermediate values (from 11 to 20) 
 // - ractangular matrices with big values (from 75 to 125) 
 // - ractangular matrices with negative values (from -10 to 0)  
+
+// More comments can be found in the README.md file on the project's repository, which can be found using the link
+// https://github.com/martinaraffaelli/step1_DeMarchRaffaelliTaddei
 
 TEST(CriticalMatrixMultiplicationTest, Vectors) {
 
