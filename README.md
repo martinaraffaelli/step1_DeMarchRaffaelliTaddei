@@ -101,9 +101,7 @@ This test uses rectangular matrices with negative random values (-10 to 0) to un
 ### Errors Detected
 Running the test cases many times, we detected the following errors. 
 Generating as many random values as possible inside the matrices was the most successful strategy, leading us to spot the greatest number of errors. 
-
 The majority of errors were easy to spot, and with just one execution of the test, we were able to detect them. 
-
 Other errors, such as Error 9, 15, and 19, were more difficult to find, and we had to run the code many times to spot them.
 
 - Error 1: Element-wise multiplication of ones detected!
