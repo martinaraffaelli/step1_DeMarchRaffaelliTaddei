@@ -281,6 +281,7 @@ TEST(StandardMatrixMultiplicationTest, BigRectangularMatrices) {
 // More comments can be found in the README.md file on the project's repository, which can be found using the link
 // https://github.com/martinaraffaelli/step1_DeMarchRaffaelliTaddei
 
+
 TEST(CriticalMatrixMultiplicationTest, Vectors) {
 
     // Randomly generate the dimensions of A
